@@ -1,0 +1,18 @@
+// OSWALD FONT
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+$oswald: Oswald, sans-serif;
+
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$white:         		#ffffff;
+$brand-primary:         #27ae60;
+
+
+$celular-min-size: 320px;
+$celular-max-size: 480px;
