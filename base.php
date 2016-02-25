@@ -21,9 +21,9 @@ use Roots\Sage\Wrapper;
         </div>
     </div>
 
-    <div class="info">
+    <!--<div class="info">
       <span>+</span>
-    </div>
+    </div>-->
     
     <?php include Wrapper\template_path(); ?>
         
