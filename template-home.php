@@ -44,4 +44,30 @@
 		
 	</section>
 
+	<section id="other-projects">
+		<div class="row">
+			<?php if( have_rows('otherworks') ): ?>
+			<?php while( have_rows('otherworks') ): the_row(); 
+				$work = get_sub_field('work');
+				$cliente = get_sub_field('cliente');
+				$caract = get_sub_field('caracteristicas');
+				$link = get_sub_field('link');
+				$image = get_sub_field('imagen');
+			?>
+			<div class="col-xs-12 col-sm-6 col-md-4 lastProject-sm" style="background-image: url(<?= $image; ?>);" data-surl="<?= $link; ?>">
+				<div class="lastProject-hover">
+					<div class="lastProject-details">
+						<div class="lastProject-cliente"><?= $cliente; ?></div>
+						<div class="lastProject-work"><h6><?= $work; ?></h6></div>
+						<div class="lastProject-car"><?= $caract; ?></div>
+						<div class="lastProject-car"><a href="<?= $link; ?>" target="_blank">ver proyecto</a></div>
+					</div>
+				</div>
+			</div>	
+			<?php endwhile; ?>
+			<?php endif; ?>
+		</div> 
+		
+	</section>
+
 <?php endwhile; ?>
